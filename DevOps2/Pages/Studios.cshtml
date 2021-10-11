@@ -1,0 +1,26 @@
+﻿@page
+@using DevOps2.Model
+@model DevOps2.Pages.StudiosModel
+@{
+    <div>
+        <a>Liste af Studios: </a>
+        @foreach (var studios in @Model.studios)
+        {
+    <div>
+        Navn: <br/> @studios.Name
+        <br />
+        <br />
+        <br />
+
+        lokation: <br/> @studios.HQCity
+        <br />
+        <br />
+        <br />
+        Medarbejdere: <br/> @studios.workers    
+
+    </div>
+        }
+    
+    
+    </div>
+}
